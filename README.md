@@ -1,7 +1,7 @@
 # C++ Teil_2
 
 Semesterarbeit des C++ Kurses (Teil 2) an der Universität zu Köln, von Viviane Linne (#5966540)
-Link zum Github-Repository:
+Link zum Github-Repository: https://github.com/vvlinne/CPlusPlus-Teil-2
 
 Was, Wie und Wieso?
 
