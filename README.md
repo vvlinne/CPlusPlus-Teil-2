@@ -10,7 +10,17 @@ Im Folgenden werde ich einen kurze Dokumentation meines Projektes darlegen, in d
 Das Programm erfüllt den Funktionsumfang der Stufe I, also die Basisaufgabe. Erstellt wurde ein kleines Spiel in dem der Spieler ein kleines Quadrat (Avatar) am unteren Bildrand von links nach rechts bewegen kann um somit random generierten Objekten (Kreise und Quadrate), die sich vom oberen zum unteren Bildrand bewegen, auszuweichen. In dem Spielfeld wird als eine Art UI am oberen Rand ein Punktecounter sowie die Leben des Spielers (drei ausgefüllte Kreise) angezeigt. Der Spieler kann einen Spielstand speichern und diesen zu gewünschter Zeit wieder laden, desweiteren kann er das Spiel starten, pausieren und beenden - diese Funktionen sind jeweils über einen Button am linken Spielfeldrand gesteuert.
 
 
-Kurze Zusammenfassung der Funktionalitäten:
+Kurze, stichpunktartige Zusammenfassung der Funktionalitäten:
+
+Spielfeld: Das Fenster in dem sich das Spiel öffnet hat eine, in der main.cpp festgehaltene, festgesetzte Größe, damit die Dimensionen des Spielfelds nicht verzerrt werden.
+
+Buttons:
+
+Stats:
+
+Gegner:
+
+Avatar/Spieler:
 
 
 Anmerkungen:
