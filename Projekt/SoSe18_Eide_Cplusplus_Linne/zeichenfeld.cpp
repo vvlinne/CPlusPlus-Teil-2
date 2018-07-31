@@ -98,7 +98,7 @@ void zeichenFeld::paintEvent(QPaintEvent *event)
 
 void zeichenFeld::keyPressEvent( QKeyEvent *k )
 {
-    //
+    // Bewegung des Avatars durch Tasteneingabe des Spielers
     switch ( k->key()) {
         case Qt::Key_Left:
             if(avatar.x - 25 >= 0) {
