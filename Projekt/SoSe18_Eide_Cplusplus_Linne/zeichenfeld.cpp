@@ -56,10 +56,7 @@ void zeichenFeld::paintEvent(QPaintEvent *event)
 
            it->calculatePosition(stepRange);
         }
-
-        if(counter == 0) {
-            qDebug() << counter;
-        }
+        
         if(counter == 0 || counter % 3 == 0) {
             gegner neuerGegner;
             gegnerVector.push_back(neuerGegner);
