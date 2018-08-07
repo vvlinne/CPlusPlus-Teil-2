@@ -21,11 +21,11 @@ Stats: Die Stats zeigen am oberen Rand des Spielfelds zum Einen den Punktestand 
 
 Gegner: Eine Klasse Gegner enthält einen randomisierten Wert (1 oder 2) der darüber entscheidet ob ein Kreis oder ein Quadrat als Gegner abgebildet wird. Diese Gegner werden am oberen Spielfeldrand erzeugt (durch einen gegnerVektor in Zeichenfeld.cpp) und bewegen sich mit einer randomisierten Steprange (diese wird nach jedem Schritt neu und random berechnet) an den unteren Spielfeldrand znd verlassen dort das Spielfeld.
 
-Avatar/Spieler: Ein Quadrat wird am unteren Ende des Spielfelds durch eine
+Avatar/Spieler: Ein Quadrat wird am unteren Ende des Spielfelds durch ein "Werkzeug" von QT welches man konfigurieren kann, it einer schraffierten Oberfläche gezeichnet gezeichnet und kann durch die Tasteneingabe des Spielers (Pfeiltasten) von links nach rechts bewegt werden. Dies wird durch die Funktion keyPressEvent ermöglicht, dadurch bewegt sich der Avatar um jeweils 25 pixel nach jeweils rechts oder links. Je nach Position wird jedoch zunächst überprüft ob ein Schritt um 25 Pixel den Avatar ausserhalb des Spielfels positionieren würde, dann würde dieser Schritt nicht ausgeführt werden.
 
-Spielfeld/Fenster:
+Spielfeld/Fenster: Das Spielfeld sowie das gesamte Fenster sind auf eine feste Größe limitiert um die Bewegung des Spielers genau eingrenzen zu können. Das Spielfeld wird in der zeichenfeld.cpp gezeichnet.
 
-Im Endeffekt verwaltet die Datei zeichenfeld.cpp die Funktionalitäten dieses Programmes.
+Im Endeffekt verwaltet die Datei zeichenfeld.cpp die gesamten Funktionalitäten dieses Programmes.
 
 Anmerkungen:
 Ich habe als Basis des Programmes die Codedateien "meinwidget.h/cpp" sowie "zeichenfeld.h/cpp" aus der Vorlesung benutzt und diese passend für die gestellte Aufgabe erweitert.
