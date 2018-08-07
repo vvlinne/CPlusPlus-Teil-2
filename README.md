@@ -14,16 +14,18 @@ Kurze, stichpunktartige Zusammenfassung der Funktionalitäten:
 
 Spielfeld: Das Fenster in dem sich das Spiel öffnet hat eine, in der main.cpp festgehaltene, festgesetzte Größe, damit die Dimensionen des Spielfelds nicht verzerrt werden.
 
-Buttons:
+Buttons: Insgesamt gibt es 4 Buttons: Start/Stop, Speichern, Laden Ende. Der Start/Stop Button wird anders behandelt als die anderen, da hier auf einem Button zwei Funktionalitäten realisiert werden. In der meinwidget.h Datei werden die Properties der Klasse definiert, die dann in der meinwidget.cpp genutzt und verändert werden. Hierzu wird ein property increment überprüft, welches bei laufendem Spiel den Wert 1 hat und bei gestopptem Spiel dem Wert 0. Je nach Wert wird die Schrift sowie die Funktionalität des Buttons verändert (entweder startet oder stoppt man das Spiel).
+Die restlichen Buttons rufen weitere Funktionen auf (savefile und loadfile in meinwidget.cpp), die Quitfuntkion ist eine QT eigene Funktion die einfach übernommen werden konnte.
 
-Stats:
+Stats: Die Stats zeigen am oberen Rand des Spielfelds zum Einen den Punktestand und zum Anderen die Leben des Spielers an. Ein Stats Objekt enthält die Werte der Punkte sowie die verfügbaren Leben eines Spielers. Dieses Objekt wird in der zeichenfeld.cpp benutzt und bildet dort die zuvor gespeicherten Werte ab. Die Funktion updatePoints erhöht den aktuellen Punktestand pro Sekunde (realisiert durch einen Timer) um 25 Einheiten.
 
-Gegner:
+Gegner: Eine Klasse Gegner enthält einen randomisierten Wert (1 oder 2) der darüber entscheidet ob ein Kreis oder ein Quadrat als Gegner abgebildet wird. Diese Gegner werden am oberen Spielfeldrand erzeugt (durch einen gegnerVektor in Zeichenfeld.cpp) und bewegen sich mit einer randomisierten Steprange (diese wird nach jedem Schritt neu und random berechnet) an den unteren Spielfeldrand znd verlassen dort das Spielfeld.
 
-Avatar/Spieler:
+Avatar/Spieler: Ein Quadrat wird am unteren Ende des Spielfelds durch eine
 
 Spielfeld/Fenster:
 
+Im Endeffekt verwaltet die Datei zeichenfeld.cpp die Funktionalitäten dieses Programmes.
 
 Anmerkungen:
 Ich habe als Basis des Programmes die Codedateien "meinwidget.h/cpp" sowie "zeichenfeld.h/cpp" aus der Vorlesung benutzt und diese passend für die gestellte Aufgabe erweitert.
