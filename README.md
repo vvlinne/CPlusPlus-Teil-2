@@ -25,6 +25,12 @@ Avatar/Spieler: Ein Quadrat wird am unteren Ende des Spielfelds durch ein "Werkz
 
 Spielfeld/Fenster: Das Spielfeld sowie das gesamte Fenster sind auf eine feste Größe limitiert um die Bewegung des Spielers genau eingrenzen zu können. Das Spielfeld wird in der zeichenfeld.cpp gezeichnet.
 
+Serialize: In einzelnen Zeilen wird die momentane Position des Spielers (x), die Punkteanzahl, der x,y Wert und der Typ aller Gegner geschrieben. Für jeden Gegner wird eine Zeile erstellt und die Werte sind druch ein Komma getrennt.
+
+Deserialize: Übersetzt die Werte zurück in die Spielobjekte. In einer while-Schleife wird jede Zeile einzeln gelesen und in den folgenden Statements jeweils klassifiziert. Bei Zeile 0 wird der x Wert des Spielers geschrieben, bei Zeile 1 die Punkte in das stats Objekt und ansonsten wird von jeder Zeile ein Gegner Objekt erzeugt, mit den heweiligen x,y,und Typwerten. Diese Gegner Objekte werden dem gegnerVektor hinzugefügt.
+
+Update: Ruft das Paintevent auf welches das Zeichenfeld aktualisiert darstellt.
+
 Im Endeffekt verwaltet die Datei zeichenfeld.cpp die gesamten Funktionalitäten dieses Programmes.
 
 Anmerkungen:
