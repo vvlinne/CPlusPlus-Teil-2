@@ -22,6 +22,8 @@ Gegner:
 
 Avatar/Spieler:
 
+Spielfeld/Fenster:
+
 
 Anmerkungen:
 Ich habe als Basis des Programmes die Codedateien "meinwidget.h/cpp" sowie "zeichenfeld.h/cpp" aus der Vorlesung benutzt und diese passend für die gestellte Aufgabe erweitert.
